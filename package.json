@@ -1,0 +1,28 @@
+{
+  "name": "express-with-mongodb",
+  "version": "1.0.0",
+  "description": "mongo with express exercise",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valeprogr/express-with-mongodb.git"
+  },
+  "author": "valentina vittoria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valeprogr/express-with-mongodb/issues"
+  },
+  "homepage": "https://github.com/Valeprogr/express-with-mongodb#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.5",
+    "nodemon": "^2.0.20"
+  }
+}
