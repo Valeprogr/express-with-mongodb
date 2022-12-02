@@ -20,6 +20,17 @@ class StudentServices {
     return student
  }
 
+ async update(student) {
+    //qui mongoose controlla se il post ha 1 id che mongoose ha creato
+    //creando il post
+    if (!student._id) {
+       throw new Error("Id missing!")
+    }
+    const updatedStudent = await Student.findByIdAndUpdate(student._id, student, { new: true });
+    return updatedStudent
+ }
 }
+
+
 
 export default new StudentServices();

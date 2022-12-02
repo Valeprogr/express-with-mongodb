@@ -6,6 +6,6 @@ const router = new Router();
 
 router.post("/students", StudentControllers.create)
 router.get("/students",StudentControllers.getAll)
-
+router.put("/students/:id",StudentControllers.update )
 
 export default router;
